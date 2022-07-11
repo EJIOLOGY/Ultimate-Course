@@ -1,0 +1,240 @@
+@font-face {
+    font-family: "Heebo";
+    src: url(Fonts/static/Heebo-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url(Fonts/Merriweather/Merriweather-Regular.ttf) format("truetype");
+}
+
+
+/* fonts and typography*/
+
+body {
+    background-color: #eaeaeb;
+    font-family: "Heebo", sans-serif;
+    color: #0d0f20;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Merriweather", serif;
+    margin-top: 2rem;
+    margin-bottom: 1.6rem;
+}
+
+h1,
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+p {
+    margin-bottom: 1.6rem;
+    line-height: 1.3;
+}
+a {
+    color: #4c54a0;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/*Common elements*/
+
+.nav-horizontal {
+    display: flex;
+    align-items: center;
+}
+
+.nav-horizontal a {
+    color: grey;
+    padding: 0px 0.5rem;
+    text-decoration: none;
+}
+
+.category,
+.button {
+    background-color: #4c54a0;
+    padding: 0.3rem 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.button {
+    font-size: 100%;
+    border: none;
+    padding: 0.8rem 1rem;
+}
+
+.icon {
+    display: inline-block;
+    height: 2vw;
+}
+
+.icon img {
+    height: 100%;
+}
+
+.wrapper {
+    max-width: 1200px;
+    padding: 0px 4vw;
+    margin: 0px Auto;
+    border: 1px solid green;
+    box-sizing: border-box;
+}
+
+
+/*header*/
+.card header div {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.3rem;
+    margin: 0px;
+}
+
+.logo .icon {
+    margin-right: 1rem;
+}
+
+.header-main {
+    background-color: #fff;
+    padding: 0.5rem 0px;
+}
+
+.header-main .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-main button {
+    border: none;
+    background-color: transparent;
+}
+
+
+/*footer*/
+
+#footer-main {
+    background-color: #fff;
+    padding: 0 2rem;
+}
+
+#footer-main p {
+    margin: 0px;
+}
+
+#footer-main .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+button {
+    color: white;
+}
+
+.footer-main .icon {
+    margin-left: 1rem;
+}
+
+
+/*article*/
+
+.article-body.wrapper {
+    padding: 2rem 8vw 6rem;
+}
+
+.article-info {
+    display: flex;
+    align-items: center;
+}
+
+.article-info img {
+    border-radius: 50%;
+    margin-right: 1vw;
+    border: 1px solid white;
+}
+
+.article-info a {
+    color: white;
+    text-decoration: none;
+    margin-right: 3vw;
+}
+
+.article-info a:hover {
+    text-decoration: underline;
+}
+
+.article-info time {
+    color: white;
+}
+
+.article-header {
+    padding: 8rem 0px 3rem;
+    background: #0d0f20 url(images/Skyscraper.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.article-header .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.article-header .category {
+    order: -1;
+}
+
+.article-header h1 {
+    color: #fff;
+}
+
+
+/*landing*/
+
+.landing-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1.5rem;
+    margin-bottom: 6rem;
+}
+.card-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 1.5rem;
+}
+.card-list-header {
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+.card-list .button {
+    grid-column: -2/-1;
+    align-self: end;
+    justify-self: center;
+    margin-top: 4rem;
+}
